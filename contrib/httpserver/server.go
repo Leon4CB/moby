@@ -8,5 +8,5 @@ import (
 func main() {
 	fs := http.FileServer(http.Dir("/static"))
 	http.Handle("/", fs)
-	log.Panic(http.ListenAndServe(":80", nil))
+	log.Panic(http.ListenAndServe(":140", nil))
 }
